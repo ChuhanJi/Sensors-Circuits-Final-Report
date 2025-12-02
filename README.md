@@ -140,20 +140,20 @@ motion sensors, human inputs, visual outputs, and a battery power system.
 ## ⚡ Circuit Diagram
 
 Xiao ESP32-C3
-GND, 3V3, BAT, D0, D1, D2 (SDA), D3 (SCL), D4, D6
+GND, 3V3, BAT, D0, D1, D2, D3, D4 (SDA), D5(SCL), D6
 
 SSD1306 OLED Display
-I²C bus — SDA (to D2), SCL (to D3)
+I²C bus — SDA (to D4), SCL (to D5)
 
 ADXL345 Accelerometer
-I²C bus — SDA (to D2), SCL (to D3)
+I²C bus — SDA (to D4), SCL (to D5)
 
 Rotary Encoder + Push Button
 Phase A/B → D0 / D1
-Switch → D6
+Switch → D2
 
 NeoPixel LED
-DIN → D4, powered from 3V3 and GND
+DIN → D6, powered from 3V3 and GND
 
 LiPo Battery + Power Switch
 Battery routed to ESP32-C3 BAT pin through a SPST slide switch
